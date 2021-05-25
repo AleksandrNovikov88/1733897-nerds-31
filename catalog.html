@@ -27,12 +27,20 @@
     <section>
         <h2>Фильтр параметров выбора</h2>
         <form action="https://echo.htmlacademy.ru/" method="get">
-                <div>
-                <label for="the-amount">Стоимость:</label>
-                <div><button type="button">От</button></div>
-                <div><button type="button">До</button></div>
-                <input type="range" id="the-amount" min="0" max="15000" step="1">
-                </div>
+            <fieldset>
+            <legend>Стоимость:</legend>
+            <label for="for">От</label>
+            <input id="for" type="text" name="filter-for" placeholder="0">
+            <label for="to">До</label>
+            <input id="to" type="text" name="filter-to" placeholder="15000">
+            <div> <!--не активная линия ползунка-->
+            <div>
+                <!--активная линия ползунка-->
+            </div>
+                <button type="button">От</button>
+                <button type="button">До</button>
+            </div>
+            </fieldset>
             <fieldset>
                <legend>Сетка:</legend>
                 <ul>
@@ -85,13 +93,27 @@
             <div>
                 <p>Сортировать</p>
                 <ul>
-                    <li>По цене</li>
-                    <li>По типу</li>
-                    <li>По названию</li>
+                    <li>
+                        <a href="blank.html">По цене</a>
+                    </li>
+                    <li>
+                        <a href="blank.html">По типу</a>
+                    </li>
+                    <li>
+                        <a href="blank.html">По названию</a>
+                    </li>
                 </ul>
-                <span></span><!--стрелочка вниз-->
-                <span></span><!--стрелочка вверх-->
-            </div>
+                </div>
+                <div>
+                <ul>
+                    <li>
+                <a href="blank.html"><span></span></a><!--стрелочка вниз-->
+                    </li>
+                    <li>
+                <a href="blank.html"><span></span></a><!--стрелочка вверх-->
+                    </li>
+                </ul>
+                </div>
         </section>
         <section>
              <ul>
@@ -148,16 +170,16 @@
         <section>
             <ul>
                 <li>
-                    <a href="#">1</a>
+                    <a href="blank.html">1</a>
                 </li>
                 <li>
-                    <a href="#">2</a>
+                    <a href="blank.html">2</a>
                 </li>
                 <li>
-                    <a href="#">3</a>
+                    <a href="blank.html">3</a>
                 </li>
                 <li>
-                    <a href="#">Следующая</a>
+                    <a href="blank.html">Следующая</a>
                 </li>
             </ul>
         </section>
