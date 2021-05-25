@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
+  <base href="https://htmlacademy-htmlcss.github.io/1733897-nerds-31/2/">
 </head>
 <body>
     <header>
@@ -25,24 +26,29 @@
 <main>
     <section>
         <h2>Фильтр параметров выбора</h2>
-        <form>
-            <fieldset>
-                <legend>Стоимость:</legend>
+        <form action="https://echo.htmlacademy.ru/" method="get">
+                <div>
+                <label for="the-amount">Стоимость:</label>
                 
-            </fieldset>
+                <div><button type="button">От</button></div>
+                <div><button type="button">До</button></div>
+                <input type="range" id="the-amount" min="0" max="15000" step="1">
+                </div>
+                
+            
             <fieldset>
                 <legend>Сетка:</legend>
                 <ul>
                     <li>
-                        <input type="radio" name="adaptive" id="adaptive" checked>
+                        <input type="radio" name="grid" id="adaptive" value="adaptive" checked>
                         <label for="adaptive">Адаптивная</label>
                     </li>
                     <li>
-                        <input type="radio" name="fixed" id="fixed">
+                        <input type="radio" name="grid" id="fixed" value="fixed">
                         <label for="fixed">Фиксированная</label>
                     </li> 
                     <li>
-                        <input type="radio" name="rubber" id="rubber">
+                        <input type="radio" name="grid" id="rubber" value="rubber">
                         <label for="rubber">Резиновая</label>
                     </li> 
                 </ul>
