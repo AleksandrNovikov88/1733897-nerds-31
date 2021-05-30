@@ -1,208 +1,213 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Нёрдс</title>
-    <link rel="icon" href="favicon.ico">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Нёрдс</title>
+  <link rel="icon" href="favicon.ico">
 </head>
+
 <body>
-<header>
+  <header>
     <nav>
-        <a href="index.html">
-            <img src="img/nerds-logo.svg" width="159" height="65" alt="Логотип Нердс">
-        </a>
-        <ul>
-            <li><a href="index.html">Студия</a></li>
-            <li><a href="blank.html">Клиенты</a></li>
-            <li><a href="catalog.html">Магазин</a></li>
-            <li><a href="blank.html">Контакты</a></li>
-        </ul>
-        <a href="blank.html">Корзина</a>
+      <a href="index.html">
+        <img src="img/nerds-logo.svg" width="159" height="65" alt="Логотип Нердс">
+      </a>
+      <ul>
+        <li><a href="index.html">Студия</a></li>
+        <li><a href="blank.html">Клиенты</a></li>
+        <li><a href="catalog.html">Магазин</a></li>
+        <li><a href="blank.html">Контакты</a></li>
+      </ul>
+      <a href="blank.html">Корзина</a>
     </nav>
-</header>
-<main>
+  </header>
+  <main>
     <h1>Магазин готовых шаблонов</h1>
     <section>
-        <h2>Фильтр параметров выбора</h2>
-        <form action="https://echo.htmlacademy.ru/" method="get">
+      <h2>Фильтр параметров выбора</h2>
+      <form action="https://echo.htmlacademy.ru/" method="get">
         <fieldset>
-        <legend>Стоимость:</legend>
-        <label for="for">От</label>
-        <input id="for" type="text" name="filter-for" placeholder="0">
-        <label for="to">До</label>
-        <input id="to" type="text" name="filter-to" placeholder="15000">
-        <div> <!--не активная линия ползунка-->
-        <div>
-            <!--активная линия ползунка-->
-        </div>
+          <legend>Стоимость:</legend>
+          <label for="for">От</label>
+          <input id="for" type="text" name="filter-for" placeholder="0">
+          <label for="to">До</label>
+          <input id="to" type="text" name="filter-to" placeholder="15000">
+          <div>
+            <!--не активная линия ползунка-->
+            <div>
+              <!--активная линия ползунка-->
+            </div>
             <button type="button">От</button>
             <button type="button">До</button>
-        </div>
+          </div>
         </fieldset>
         <fieldset>
-        <legend>Сетка:</legend>
-        <ul>
+          <legend>Сетка:</legend>
+          <ul>
             <li>
-                <input type="radio" name="grid" id="adaptive" value="adaptive" checked>
-                <label for="adaptive">Адаптивная</label>
+              <input type="radio" name="grid" id="adaptive" value="adaptive" checked>
+              <label for="adaptive">Адаптивная</label>
             </li>
             <li>
-                <input type="radio" name="grid" id="fixed" value="fixed">
-                <label for="fixed">Фиксированная</label>
-            </li> 
+              <input type="radio" name="grid" id="fixed" value="fixed">
+              <label for="fixed">Фиксированная</label>
+            </li>
             <li>
-                <input type="radio" name="grid" id="rubber" value="rubber">
-                <label for="rubber">Резиновая</label>
-            </li> 
-        </ul>
+              <input type="radio" name="grid" id="rubber" value="rubber">
+              <label for="rubber">Резиновая</label>
+            </li>
+          </ul>
         </fieldset>
         <fieldset>
-        <legend>Особенности:</legend>
-        <ul>
+          <legend>Особенности:</legend>
+          <ul>
             <li>
-                <input type="checkbox" name="slider" id="slider" checked>
-                <label for="slider">Слайдер</label>
+              <input type="checkbox" name="slider" id="slider" checked>
+              <label for="slider">Слайдер</label>
             </li>
             <li>
-                <input type="checkbox" name="advantages-block" id="advantages-block">
-                <label for="advantages-block">Блок преимуществ</label>
+              <input type="checkbox" name="advantages-block" id="advantages-block">
+              <label for="advantages-block">Блок преимуществ</label>
             </li>
             <li>
-                <input type="checkbox" name="news" id="news" checked>
-                <label for="news">Новости</label>
+              <input type="checkbox" name="news" id="news" checked>
+              <label for="news">Новости</label>
             </li>
             <li>
-                <input type="checkbox" name="galery" id="galery">
-                <label for="galery">Галерея</label>
+              <input type="checkbox" name="galery" id="galery">
+              <label for="galery">Галерея</label>
             </li>
             <li>
-                <input type="checkbox" name="basket" id="basket">
-                <label for="basket">Корзина</label>
+              <input type="checkbox" name="basket" id="basket">
+              <label for="basket">Корзина</label>
             </li>
-            
-        </ul>
+
+          </ul>
         </fieldset>
         <button type="submit">Показать</button>
-        </form>
+      </form>
     </section>
     <div>
-        <h2>Сортировка</h2> 
-        <ul>
-            <li>
-                <a href="blank.html">По цене</a>
-            </li>
-            <li>
-                <a href="blank.html">По типу</a>
-            </li>
-            <li>
-                <a href="blank.html">По названию</a>
-            </li>
-        </ul>
-        <ul>
-            <li>
-        <a href="blank.html"></a><!--стрелочка вниз-->
-            </li>
-            <li>
-        <a href="blank.html"></a><!--стрелочка вверх-->
-            </li>
-        </ul>
+      <h2>Сортировка</h2>
+      <ul>
+        <li>
+          <a href="blank.html">По цене</a>
+        </li>
+        <li>
+          <a href="blank.html">По типу</a>
+        </li>
+        <li>
+          <a href="blank.html">По названию</a>
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <a href="blank.html"></a>
+          <!--стрелочка вниз-->
+        </li>
+        <li>
+          <a href="blank.html"></a>
+          <!--стрелочка вверх-->
+        </li>
+      </ul>
     </div>
     <section>
-    <h2>Шаблоны сайтов</h2>
-        <ul>
-            <li>
-                <a href="blank.html">
-                    <img src="img/catalog/img-sedona.jpg" width="359" height="578" alt="Шаблон сайта Седония">
-                 </a>
-                <div>
-                    <h3><a href="#">Sedona</a></h3>
-                    <p>Информационный сайт для туристов</p>
-                    <a href="#">9 900 ₽</a>
-                </div>
-            </li>
-            <li>
-                <a href="blank.html">
-                <img src="img/catalog/img-pink.jpg" width="358" height="578" alt="Шаблон сайта Pink App">
-                </a> 
-                <div>
-                <h3><a href="#">Pink App</a></h3>
-                <p>Продуктовый лендинг приложения для iOS и Android</p>
-                <a href="#">9 900 ₽</a>
-                </div>
-            </li>
-            <li>
-                <a href="blank.html">
-                <img src="img/catalog/img-barbershop.jpg" width="358" height="578" alt="Шаблон сайта Barbershop">
-                </a>
-                <div>
-                    <h3><a href="#">Barbershop</a></h3>
-                    <p>Сайт салона красоты. Для мужчин, да.</p>
-                    <a href="#">9 900 ₽</a>
-                </div>
-            </li>
-            <li>
-                <a href="blank.html">
-                <img src="img/catalog/img-mishka.jpg" width="359" height="578" alt="Шаблон сайта Mishka">
-                </a>
-                <div>
-                <h3><a href="#">Mishka</a></h3>
-                <p>Интернет-магазин вязаных игрушек</p>
-                <a href="#">9 900 ₽</a>
-                </div>
-            </li>
-            <li>
-                <a href="blank.html">
-                <img src="img/catalog/img-aplus.jpg" width="359" height="578" alt="Шаблон сайта A Plus">
-                </a>
-                <div>
-                <h3><a href="#">A Plus</a></h3>
-                <p>Лендинг курсов повышения квалификации</p>
-                <a href="#">9 900 ₽</a>
-                </div>
-            </li>
-            <li>
-                <a href="blank.html">
-                <img src="img/catalog/img-kvast.jpg" width="359" height="578" alt="Шаблон сайта Кваст">
-                </a>
-                <div>
-                <h3><a href="#">Кваст</a></h3>
-                <p>Промо-сайт производителя крафтового кваса</p>
-                <a href="#">9 900 ₽</a>
-                </div>
-            </li>
-        </ul>
+      <h2>Шаблоны сайтов</h2>
+      <ul>
+        <li>
+          <a href="blank.html">
+            <img src="img/catalog/img-sedona.jpg" width="359" height="578" alt="Шаблон сайта Седония">
+          </a>
+          <div>
+            <h3><a href="#">Sedona</a></h3>
+            <p>Информационный сайт для туристов</p>
+            <a href="#">9 900 ₽</a>
+          </div>
+        </li>
+        <li>
+          <a href="blank.html">
+            <img src="img/catalog/img-pink.jpg" width="358" height="578" alt="Шаблон сайта Pink App">
+          </a>
+          <div>
+            <h3><a href="#">Pink App</a></h3>
+            <p>Продуктовый лендинг приложения для iOS и Android</p>
+            <a href="#">9 900 ₽</a>
+          </div>
+        </li>
+        <li>
+          <a href="blank.html">
+            <img src="img/catalog/img-barbershop.jpg" width="358" height="578" alt="Шаблон сайта Barbershop">
+          </a>
+          <div>
+            <h3><a href="#">Barbershop</a></h3>
+            <p>Сайт салона красоты. Для мужчин, да.</p>
+            <a href="#">9 900 ₽</a>
+          </div>
+        </li>
+        <li>
+          <a href="blank.html">
+            <img src="img/catalog/img-mishka.jpg" width="359" height="578" alt="Шаблон сайта Mishka">
+          </a>
+          <div>
+            <h3><a href="#">Mishka</a></h3>
+            <p>Интернет-магазин вязаных игрушек</p>
+            <a href="#">9 900 ₽</a>
+          </div>
+        </li>
+        <li>
+          <a href="blank.html">
+            <img src="img/catalog/img-aplus.jpg" width="359" height="578" alt="Шаблон сайта A Plus">
+          </a>
+          <div>
+            <h3><a href="#">A Plus</a></h3>
+            <p>Лендинг курсов повышения квалификации</p>
+            <a href="#">9 900 ₽</a>
+          </div>
+        </li>
+        <li>
+          <a href="blank.html">
+            <img src="img/catalog/img-kvast.jpg" width="359" height="578" alt="Шаблон сайта Кваст">
+          </a>
+          <div>
+            <h3><a href="#">Кваст</a></h3>
+            <p>Промо-сайт производителя крафтового кваса</p>
+            <a href="#">9 900 ₽</a>
+          </div>
+        </li>
+      </ul>
     </section>
     <section>
-        <h2>Навигация по шаблонам сайтов</h2>
-        <ul>
-            <li>
-                <a href="blank.html">1</a>
-            </li>
-            <li>
-                <a href="blank.html">2</a>
-            </li>
-            <li>
-                <a href="blank.html">3</a>
-            </li>
-            <li>
-                <a href="blank.html">Следующая</a>
-            </li>
-        </ul>
+      <h2>Навигация по шаблонам сайтов</h2>
+      <ul>
+        <li>
+          <a href="blank.html">1</a>
+        </li>
+        <li>
+          <a href="blank.html">2</a>
+        </li>
+        <li>
+          <a href="blank.html">3</a>
+        </li>
+        <li>
+          <a href="blank.html">Следующая</a>
+        </li>
+      </ul>
     </section>
     <section class="contacts">
-        <h2>Контакты</h2>
-        <figure class="contacts-content">
-            <img src="img/map-marker.png" width="1440" height="416" alt="Карта c маркером Нердс">
+      <h2>Контакты</h2>
+      <figure class="contacts-content">
+        <img src="img/map-marker.png" width="1440" height="416" alt="Карта c маркером Нердс">
         <figcaption>Карта</figcaption>
-        </figure>
-        <div class="address">
+      </figure>
+      <div class="address">
         <p>Nerds design studio</p>
         <p>наб. Реки Карповки, 5 лит П, Санкт-Петербург <a href="tel:+78005558628">+7 800 555-86-28</a></p>
         <a href="writeus.html">Напишите нам</a>
-        </div>
+      </div>
     </section>
-</main>
-<footer>
+  </main>
+  <footer>
     <section>
       <ul>
         <li>
@@ -216,10 +221,11 @@
         </li>
       </ul>
     </section>
-        <div>
-          <p>Давайте дружить, это выгодно!</p>
-          <p>Скидка 10% для друзей из социальных сетей.</p>
-        </div>
+    <div>
+      <p>Давайте дружить, это выгодно!</p>
+      <p>Скидка 10% для друзей из социальных сетей.</p>
+    </div>
   </footer>
 </body>
+
 </html>

@@ -1,39 +1,47 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Нёрдс</title>
-    <link rel="icon" href="favicon.ico">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Нёрдс</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body class="page-body">
   <header class="main-header">
     <nav class="main-navigation">
-          <a class="main-header-logo">
-            <img src="img/nerds-logo.svg" width="159" height="65" alt="Логотип Нердс">
-          </a>
+      <a class="main-header-logo" href="blank.html">
+        <img src="img/nerds-logo.svg" width="159" height="65" alt="Логотип Нердс">
+      </a>
       <ul class="site-navigation">
         <li><a href="blank.html">Студия</a></li>
         <li><a href="blank.html">Клиенты</a></li>
         <li><a href="catalog.html">Магазин</a></li>
         <li><a href="blank.html">Контакты</a></li>
       </ul>
-          <a class="basket-link" href="blank.html">Корзина</a>
+      <div class="basket-link">
+        <a href="blank.html">Корзина</a>
+      </div>
     </nav>
   </header>
   <main class="container">
     <h1>Дизайн студия Нёрдс</h1>
-<!--Слайдер-->    
+    <!--Слайдер-->
     <section class="slides">
       <ul class="slides-list">
         <li class="slide-item">
           <h2>Долго, дорого, скрупулезно</h2>
           <p>Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.</p>
-          <a class="button" href="blank.html">Узнать больше</a> 
+          <a class="button" href="blank.html">Узнать больше</a>
         </li>
         <li class="slide-item">
           <h2>Любим математику как никто другой</h2>
           <p>Никакого креатива только математические формулы<br> для расчета идеальных пропорций.</p>
-          <a class="button" href="blank.html">Узнать больше</a>     
+          <a class="button" href="blank.html">Узнать больше</a>
         </li>
         <li class="slide-item">
           <h2>Только ночь, только хардкор</h2>
@@ -41,7 +49,7 @@
           <a class="button" href="blank.html">Узнать больше</a>
         </li>
       </ul>
-<!--Переключатели-->
+      <!--Переключатели-->
       <ul>
         <li>
           <button type="button"></button>
@@ -54,7 +62,7 @@
         </li>
       </ul>
     </section>
-<!--Услуги-->
+    <!--Услуги-->
     <section class="services">
       <h2>Услуги</h2>
       <ul class="services-list">
@@ -75,19 +83,20 @@
         </li>
       </ul>
     </section>
-<!--О компании-->
+    <!--О компании-->
     <section class="about-company">
       <h2>О компании</h2>
-        <h3>Мы — маленькая, но гордая<br> дизайн-студия из Краснодара.</h3>
-          <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет<br>превыше креатива. Работаем не покладая рук, как роботы.</p>
-          <p>Выполняем заказы на разработку:</p>
+      <h3>Мы — маленькая, но гордая<br> дизайн-студия из Краснодара.</h3>
+      <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет<br>превыше креатива. Работаем не
+        покладая рук, как роботы.</p>
+      <p class="about-company-subtitle">Выполняем заказы на разработку:</p>
       <ul>
         <li>Веб-сайтов любой сложности</li>
         <li>Мобильных приложений для iOS и Android</li>
         <li>Слайдшоу и видео для корпоративных презентаций</li>
       </ul>
-          <img src="img/nerds-illustration.png" width="360" height="208" alt="Логотип компании праздничный">
-          <p>с 2004 года Любим точность во всем:</p>
+      <img src="img/nerds-illustration.png" width="360" height="208" alt="Логотип компании праздничный">
+      <p class="about-company-subtitle">с 2004 года Любим точность во всем:</p>
       <dl>
         <dt>146<span>%</span></dt>
         <dd>Уровень самоотдачи</dd>
@@ -97,60 +106,62 @@
         <dd>Минимальная предоплата</dd>
       </dl>
     </section>
-<!--Клиенты-->
+    <!--Клиенты-->
     <section class="customers">
       <h2>Клиенты</h2>
       <ul class="customers-list">
         <li class="customer-item">
           <a href="blank.html">
-          <img src="img/customer logos/logo_htmlacademy.png" width="199" height="57" alt="Логотип htmlacademy"></a>
+            <img src="img/customer logos/logo_htmlacademy.png" width="199" height="57" alt="Логотип htmlacademy"></a>
         </li>
         <li class="customer-item">
           <a href="blank.html">
-          <img src="img/customer logos/logo-borodinski.png" width="209" height="90" alt="Логотип Бородинский"></a>
+            <img src="img/customer logos/logo-borodinski.png" width="209" height="90" alt="Логотип Бородинский"></a>
         </li>
         <li class="customer-item">
           <a href="blank.html">
-          <img src="img/customer logos/logo-pink.png" width="185" height="52" alt="Логотип Пинк"></a>
+            <img src="img/customer logos/logo-pink.png" width="185" height="52" alt="Логотип Пинк"></a>
         </li>
         <li class="customer-item">
           <a href="blank.html">
-          <img src="img/customer logos/logo-mishka.png" width="173" height="84" alt="Логотип Мишка"></a>
+            <img src="img/customer logos/logo-mishka.png" width="173" height="84" alt="Логотип Мишка"></a>
         </li>
       </ul>
     </section>
-<!--Контакты-->
+    <!--Контакты-->
     <section class="contacts">
       <h2>Контакты</h2>
-        <figure class="contacts-content">
-          <img src="img/map-marker.png" width="1440" height="416" alt="Карта c маркером Нердс">
-          <figcaption>Карта</figcaption>
-        </figure>
-        <div class="address">
-          <p>Nerds design studio</p>
-          <p>наб. Реки Карповки, 5 лит П, Санкт-Петербург <a class="contacts-phone" href="tel:+78005558628">+7 800 555-86-28</a></p>
-          <a class="button" href="writeus.html">Напишите нам</a>
-        </div>
+      <figure class="contacts-content">
+        <img src="img/map-marker.png" width="1440" height="416" alt="Карта c маркером Нердс">
+        <figcaption>Карта</figcaption>
+      </figure>
+      <div class="address">
+        <p>Nerds design studio</p>
+        <p>наб. Реки Карповки, 5 лит П, Санкт-Петербург <a class="contacts-phone" href="tel:+78005558628">+7 800
+            555-86-28</a></p>
+        <a class="button" href="writeus.html">Напишите нам</a>
+      </div>
     </section>
   </main>
   <footer class="main-footer">
-    <section>
+    <section class="footer-social">
       <ul>
         <li>
-          <a href="#">Вконтакте</a>
+          <a class="social-button" href="#">Вконтакте</a>
         </li>
         <li>
-          <a href="#">Фейсбук</a>
+          <a class="social-button" href="#">Фейсбук</a>
         </li>
         <li>
-          <a href="#">Инстаграм</a>
+          <a class="social-button" href="#">Инстаграм</a>
         </li>
       </ul>
     </section>
-        <div>
-          <p>Давайте дружить, это выгодно!</p>
-          <p>Скидка 10% для друзей из социальных сетей.</p>
-        </div>
+    <div class="social-slogan">
+      <p>Давайте дружить, это выгодно!</p>
+      <p>Скидка 10% для друзей из социальных сетей.</p>
+    </div>
   </footer>
 </body>
+
 </html>
