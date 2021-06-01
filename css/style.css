@@ -26,6 +26,7 @@ body {
   color: var(--black);
   background-color: var(--white);
 }
+/* index */
 .main-header,
 .slides {
   background-color: var(--gray);
@@ -69,7 +70,7 @@ body {
   font-weight: 400;
   color: var(--for-paragraph);
 }
-.button {
+.slide-button {
   font-size: 16px;
   line-height: 18px;
   color: var(--white);
@@ -173,8 +174,10 @@ body {
   text-decoration: none;
   color: var(--for-address);
 }
-.address .button {
+.contacts-button {
   background-color: var(--red);
+  color: var(--white);
+  text-decoration: none;
 }
 .footer-social li {
   list-style: none;
@@ -191,3 +194,125 @@ body {
   line-height: 22px;
   color: var(--for-footer);
 }
+/* catalog */
+
+.filters legend {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: var(--black);
+}
+.filter-cost {
+  background: var(--gray);
+  border: none;
+}
+.filter-cost label {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: var(--for-paragraph);
+}
+.filter-grid,
+.features {
+  border: none;
+}
+.radio-list,
+.features-list {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--for-paragraph);
+  list-style: none;
+}
+.filter-button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--black);
+  text-transform: uppercase;
+  background-color: var(--gray);
+}
+.sorting p {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: var(--black);
+}
+.sort-list,
+.sort-arrows {
+  list-style: none;
+}
+.sorting a {
+  text-decoration: none;
+}
+.sort-list a,
+.sort-arrows a {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: var(--black);
+}
+.templates-list {
+  list-style: none;
+}
+.templates a {
+  text-decoration: none;
+  color: var(--black);
+}
+.templates h3 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+.popup-window {
+  background-color: var(--gray);
+}
+.popup-window a:nth-child(3)  {
+  color: var(--white);
+}
+.popup-button {
+  background-color: var(--red);
+}
+.templates-navigation-list {
+  list-style: none;
+}
+.templates-navigation a {
+  text-decoration: none;
+  color: var(--black);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+.templates-navigation-list  li:first-child {
+  border: 3px solid #DBDBDB;
+}
+.templates-navigation-list  li:nth-child(2),
+.templates-navigation-list  li:nth-child(3),
+.templates-navigation-list  li:nth-child(4)  {
+  background-color: var(--gray);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
