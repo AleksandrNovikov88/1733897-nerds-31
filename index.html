@@ -13,7 +13,7 @@
 
 <body class="page-body">
   <header class="main-header">
-    <nav class="main-navigation">
+    <nav class="main-navigation center">
       <a class="main-header-logo">
         <img src="img/nerds-logo.svg" width="159" height="65" alt="Логотип Нердс">
       </a>
@@ -32,38 +32,40 @@
     <h1>Дизайн студия Нёрдс</h1>
     <!--Слайдер-->
     <section class="slides">
-      <ul class="slides-list">
-        <li class="slide-item">
-          <h2>Долго, дорого, скрупулезно</h2>
-          <p>Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.</p>
-          <a class="slide-button" href="javascript:void(0)">Узнать больше</a>
-        </li>
-        <li class="slide-item">
-          <h2>Любим математику как никто другой</h2>
-          <p>Никакого креатива только математические формулы<br> для расчета идеальных пропорций.</p>
-          <a class="slide-button" href="javascript:void(0)">Узнать больше</a>
-        </li>
-        <li class="slide-item">
-          <h2>Только ночь, только хардкор</h2>
-          <p>Работать днем как все? мы против этого.<br> Ближе к полуночи работа только начинается.</p>
-          <a class="slide-button" href="javascript:void(0)">Узнать больше</a>
-        </li>
-      </ul>
-      <!--Переключатели-->
-      <ul>
-        <li>
-          <button type="button"></button>
-        </li>
-        <li>
-          <button type="button"></button>
-        </li>
-        <li>
-          <button type="button"></button>
-        </li>
-      </ul>
+      <div class="center">
+        <ul class="slides-list">
+          <li class="slide-item">
+            <h2>Долго, дорого,<br> скрупулезно</h2>
+            <p>Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.</p>
+            <a class="slide-button" href="javascript:void(0)">Узнать больше</a>
+          </li>
+          <li class="slide-item">
+            <h2>Любим математику<br> как никто другой</h2>
+            <p>Никакого креатива только математические формулы<br> для расчета идеальных пропорций.</p>
+            <a class="slide-button" href="javascript:void(0)">Узнать больше</a>
+          </li>
+          <li class="slide-item">
+            <h2>Только ночь,<br> только хардкор</h2>
+            <p>Работать днем как все? мы против этого.<br> Ближе к полуночи работа только начинается.</p>
+            <a class="slide-button" href="javascript:void(0)">Узнать больше</a>
+          </li>
+        </ul>
+        <!--Переключатели-->
+        <ul class="sliders-buttons">
+          <li>
+            <button type="button"></button>
+          </li>
+          <li>
+            <button type="button"></button>
+          </li>
+          <li>
+            <button type="button"></button>
+          </li>
+        </ul>
+      </div>
     </section>
     <!--Услуги-->
-    <section class="services">
+    <section class="services center">
       <h2>Услуги</h2>
       <ul class="services-list">
         <li class="service-item">
@@ -84,20 +86,21 @@
       </ul>
     </section>
     <!--О компании-->
-    <section class="about-company">
+    <section class="about-company center">
       <h2>О компании</h2>
-      <div>
+      <div class="about-company-grid">
+        <div>
           <h3>Мы — маленькая, но гордая<br> дизайн-студия из Краснодара.</h3>
           <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет<br>превыше креатива. Работаем не
             покладая рук, как роботы.</p>
           <p class="about-company-subtitle">Выполняем заказы на разработку:</p>
-          <ul>
+          <ul class="about-company-list">
             <li>Веб-сайтов любой сложности</li>
             <li>Мобильных приложений для iOS и Android</li>
             <li>Слайдшоу и видео для корпоративных презентаций</li>
           </ul>
-    </div>
-    <div>
+        </div>
+        <div>
           <img src="img/nerds-illustration.png" width="360" height="208" alt="Логотип компании праздничный">
           <p class="about-company-subtitle">с 2004 года Любим точность во всем:</p>
           <dl>
@@ -108,10 +111,11 @@
             <dt>50<span>%</span></dt>
             <dd>Минимальная предоплата</dd>
           </dl>
-    </div>
+        </div>
+      </div>
     </section>
     <!--Клиенты-->
-    <section class="customers">
+    <section class="customers center">
       <h2>Клиенты</h2>
       <ul class="customers-list">
         <li class="customer-item">
@@ -147,9 +151,9 @@
       </div>
     </section>
   </main>
-  <footer class="main-footer">
+  <footer class="main-footer center">
     <section class="footer-social">
-      <ul>
+      <ul class="social-list">
         <li>
           <a class="social-button" href="javascript:void(0)">Вконтакте</a>
         </li>
