@@ -14,7 +14,7 @@
 }
 /* Global */
 
-body {
+.page-body {
   min-width: 960px;
   margin: 0;
   padding: 0;
@@ -269,11 +269,24 @@ body {
 
 /* catalog */
 
+
+
 .main-title-catalog {
   font-weight: 500;
   font-size: 55px;
   line-height: 55px;
   color: var(--black);
+  width: 727px;
+  margin: 0 auto;
+  padding-top: 87px;
+  padding-bottom: 108px;
+}
+.title-container {
+  background-color: var(--gray);
+}
+.catalog-main-grid-container {
+  display: grid;
+  grid-template-columns: 30% 70%;
 }
 .filters legend {
   font-weight: 700;
@@ -356,6 +369,9 @@ body {
 }
 .popup-button {
   background-color: var(--red);
+}
+.templates-navigation {
+  
 }
 .templates-navigation-list {
   list-style: none;
