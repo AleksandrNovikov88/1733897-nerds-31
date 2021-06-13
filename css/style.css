@@ -38,20 +38,18 @@
 }
 
 /* index */
-.main-header,
-.slides {
+.main-header {
   background-color: var(--gray);
 }
 .navigation-section {
   width: 1160px;
-  height: 65px;
   margin: 0 auto;
 }
 .main-navigation {
   display: grid;
   grid-template-columns: min-content 1fr min-content;
   padding: 0 10px;
-  height: 65px;
+  min-height: 65px;
   font-size: 16px;
   line-height: 30px;
   font-weight: 500;
@@ -64,6 +62,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+  flex-wrap: wrap;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -73,6 +72,7 @@
 .basket-link {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   width: 115px;
 }
 .site-navigation a,
@@ -89,11 +89,13 @@
   color: var(--red);
 }*/
 .slides {
+  background-color: var(--gray);
   margin-bottom: 80px;
   padding: 0 10px;
 }
 .center-slides {
   width: 1160px;
+  min-height: 431px;
   margin: 0 auto;
 }
 .slides-list {
@@ -104,6 +106,7 @@
 .sliders-flex-container {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 .sliders-buttons {
   margin: 0;
@@ -129,8 +132,8 @@
 }
 .services {
   width: 1100px;
-  height: 347px;
-  padding: 0 10px;
+  padding: 53px 10px;
+  min-height: 347px;
   margin: 0 auto;
   margin-bottom: 121px;
 }
@@ -172,7 +175,8 @@
  }
  .about-company {
    width: 1174px;
-   height: 413px;
+   min-height: 413px;
+   padding: 0 10px;
    margin: 0 auto;
    margin-bottom: 73px;
  }
@@ -180,7 +184,8 @@
    margin: 0;
  }
  .about-company-flex {
-   display: flex; 
+   display: flex;
+   flex-wrap: wrap;
  }
  .about-company-list {
   margin: 0;
@@ -196,6 +201,8 @@
 .about-company-flex-container {
   display: flex;
   margin: 0;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 .about-company h3 {
   width: 651px;
@@ -247,7 +254,7 @@
 }
 .customers {
   width: 1159px;
-  height: 184px;
+  min-height: 184px;
   margin: 0 auto;
 }
 .customers-list {
@@ -255,12 +262,21 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
 }
+.customer-item {
+  padding: 0 10px;
+}
 .contacts {
   width: 1440px;
+  min-height: 416px;
   margin: 0 auto;
+  margin-bottom: 68px;
+}
+.address {
+  padding: 0 10px;
 }
 .address p:first-child {
   font-weight: 700;
@@ -288,13 +304,14 @@
   display: grid;
   grid-template-columns: 25% 75%;
   width: 1060px;
-  height: 81px;
+  min-height: 81px;
   margin: 0 auto;
   margin-bottom: 68px;
 }
 .social-list {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
 }
