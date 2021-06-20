@@ -149,17 +149,51 @@
   margin: 0;
   padding: 0;
 }
-.sliders-flex-container {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+.slides-list .slide-item:nth-child(1) {
+  background-image: url(../img/sliders/nerds-index-slide1.jpg);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 65%;
+}
+.slides-list .slide-item:nth-child(2) {
+  background-image: url(../img/sliders/nerds-index-slide2.jpg);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 65%;
+}
+.slides-list .slide-item:nth-child(3) {
+  background-image: url(../img/sliders/nerds-index-slide3.jpg);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 65%;
 }
 .slide-button {
   padding: 17px 54px 15px 54px;
 }
+.sliders-flex-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100px;
+}
 .sliders-buttons {
   margin: 0;
   padding: 0;
+  list-style: none;
+  margin-left: 600px;
+}
+.slide-item {
+  position: relative;
+  padding-bottom: 101px;
+}
+.sliders-buttons li::before {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  top: 1270px;
+  border-radius: 50%;
+  background-color: var(--white);
 }
 .slide-item a:hover,
 .slide-item a:focus {
@@ -174,12 +208,16 @@
   margin: 0;
   padding: 0;
   padding-top: 78px;
+  margin-bottom: 37px;
 }
 .slide-item p {
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
   color: var(--for-paragraph);
+  margin: 0;
+  padding: 0;
+  margin-bottom: 27px;
 }
 .slide-button {
   font-size: 16px;
@@ -203,17 +241,44 @@
   margin: 0;
   padding: 0;
 }
+.services-list .service-item:nth-child(1) {
+  background-image: url(../img/section1/illustration-1.jpg);
+  background-size: 300px 146px;
+  background-repeat: no-repeat;
+  background-position: top left;
+}
+.services-list .service-item:nth-child(2) {
+  background-image: url(../img/section1/illustration-2.jpg);
+  background-size: 300px 146px;
+  background-repeat: no-repeat;
+  background-position: top left;
+}
+.services-list .service-item:nth-child(3) {
+  background-image: url(../img/section1/illustration-3.jpg);
+  background-size: 300px 146px;
+  background-repeat: no-repeat;
+  background-position: top left;
+}
+.service-item {
+  padding-top: 171px; 
+}
 .service-item h3 {
   font-size: 24px;
   line-height: 30px;
   font-weight: 700;
   text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 16px;
 }
 .service-item p {
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
   color: var(--for-paragraph);
+  margin: 0;
+  padding: 0;
+  margin-bottom: 32px;
 }
 .services-list li:nth-child(1) > a {
   background-color: var(--red);
@@ -266,24 +331,25 @@
   margin: 0 auto;
 }
 .about-company {
-   width: 1174px;
-   min-height: 413px;
-   padding: 0 10px;
-   margin: 0 auto;
-   margin-bottom: 73px;
-   position: relative;
- }
- .about-company-subtitle {
-   margin: 0;
- }
- .about-company-flex {
-   display: flex;
-   flex-wrap: wrap;
- }
- .about-company-list {
+  width: 1174px;
+  min-height: 413px;
+  padding: 0 10px;
+  margin: 0 auto;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--for-paragraph);
+  margin-bottom: 75px;
+  position: relative;
+}
+.about-company-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+.about-company-list {
   margin: 0;
   padding: 0;
- }
+}
 .about-company-illustration {
   width: 360px;
   margin-left: 149px;
@@ -297,7 +363,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
 }
-.about-company h3 {
+.about-company-text h3 {
   width: 651px;
   margin: 0;
   margin-bottom: 32px;
@@ -306,11 +372,8 @@
   line-height: 45px;
   color: var(--black);
 }
-.about-company p {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  color: var(--for-paragraph);
+.about-company-text p {
+  margin-bottom: 40px;
 }
 .about-company-subtitle {
   font-weight: 700;
@@ -318,19 +381,37 @@
   line-height: 24px;
   text-transform: uppercase;
   color: var(--for-paragraph);
+  margin: 0;
+}
+.about-company-illustration .about-company-subtitle {
+  margin-bottom: 31px;
+}
+.about-company-text .about-company-subtitle {
+  margin-bottom: 23px;
 }
 .about-company li {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  color: var(--for-paragraph);
   list-style: none;
+  position: relative;
+  padding-bottom: 40px;
+}
+.about-company-list {
+  margin-left: 30px;
+}
+.about-company-list li::before {
+  content: "";
+  position: absolute;
+  width: 25px;
+  top: 10px;
+  left: -35px;
+  height: 2px;
+  background-color: var(--red);
 }
 .about-company dt {
   font-weight: 700;
   font-size: 45px;
   line-height: 64px;
   color: var(--black);
+  position: relative;
 }
 .about-company dd {
   font-weight: 400;
@@ -340,6 +421,8 @@
   margin: 0;
 }
 .about-company span {
+  position: absolute;
+  top: 5px;
   font-weight: 700;
   font-size: 26px;
   line-height: 40px;
@@ -439,9 +522,14 @@
   min-height: 416px;
   margin: 0 auto;
   margin-bottom: 68px;
+  position: relative;
 }
 .address {
-  padding: 0 10px;
+  position: absolute;
+  top: 54px;
+  left: 140px;
+  background-color: var(--white);
+  padding: 49px 39px 47px 50px;
 }
 .address p:first-child {
   font-weight: 700;
@@ -449,12 +537,21 @@
   line-height: 30px;
   color: var(--black);
   text-transform: uppercase;
+  margin-bottom: 23px;
 }
-.address p:last-child {
+.address p:nth-child(2) {
+  margin-bottom: 17px;
+}
+.address p:nth-child(3) {
+  margin-bottom: 37px;
+}
+.address p {
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
   color: var(--for-address);
+  margin: 0;
+  padding: 0;
 }
 .contacts-phone {
   text-decoration: none;
@@ -464,6 +561,7 @@
   background-color: var(--red);
   color: var(--white);
   text-decoration: none;
+  text-transform: uppercase;
   padding: 17px 44px 15px 44px;
 }
 .main-footer {
