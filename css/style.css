@@ -150,19 +150,19 @@
   padding: 0;
 }
 .slides-list .slide-item:nth-child(1) {
-  background-image: url(../img/sliders/nerds-index-slide1.jpg);
+  background-image: url(../img/sliders/nerds-index-slide1.png);
   background-repeat: no-repeat;
   background-position: right;
   background-size: 65%;
 }
 .slides-list .slide-item:nth-child(2) {
-  background-image: url(../img/sliders/nerds-index-slide2.jpg);
+  background-image: url(../img/sliders/nerds-index-slide2.png);
   background-repeat: no-repeat;
   background-position: right;
   background-size: 65%;
 }
 .slides-list .slide-item:nth-child(3) {
-  background-image: url(../img/sliders/nerds-index-slide3.jpg);
+  background-image: url(../img/sliders/nerds-index-slide3.png);
   background-repeat: no-repeat;
   background-position: right;
   background-size: 65%;
@@ -174,26 +174,25 @@
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  width: 100px;
+  width: 80px;
 }
 .sliders-buttons {
   margin: 0;
   padding: 0;
   list-style: none;
-  margin-left: 600px;
-}
-.slide-item {
-  position: relative;
-  padding-bottom: 101px;
-}
-.sliders-buttons li::before {
-  content: "";
   position: absolute;
+  top: 390px;
+  left: 915px;
+}
+.sliders-flex-container button {
+  background-color: var(--white);
+  border: none;
+  border-radius: 50%;
   width: 18px;
   height: 18px;
-  top: 1270px;
-  border-radius: 50%;
-  background-color: var(--white);
+}
+.slide-item {
+  padding-bottom: 101px;
 }
 .slide-item a:hover,
 .slide-item a:focus {
