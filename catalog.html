@@ -41,19 +41,23 @@
           <form action="https://echo.htmlacademy.ru/" method="get">
             <fieldset class="filter-cost">
               <legend>Стоимость:</legend>
-              <div class="sliders">
-                <!--не активная линия ползунка-->серая линия
-                <div class="active-line">
-                  <!--активная линия ползунка-->зелёная линия
+              <div class="range-filter">
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar"></div>
+                  </div>
+                  <div class="toggle toggle-min"></div>
+                  <div class="toggle toggle-max"></div>
                 </div>
-                <button class="slider-1" type="button">От</button>
-                <button class="slider-2" type="button">До</button>
+                <div class="price-controls">
+                  <label class="min-price">
+                    от <input type="number" name="min-price" value="0">
+                  </label>
+                  <label class="max-price">
+                    до <input type="number" name="max-price" value="15000">
+                  </label>
+                </div>
               </div>
-
-              <label for="for">От</label>
-              <input id="for" type="text" name="filter-for" placeholder="0">
-              <label for="to">До</label>
-              <input id="to" type="text" name="filter-to" placeholder="15000">
 
             </fieldset>
             <fieldset class="filter-grid">
