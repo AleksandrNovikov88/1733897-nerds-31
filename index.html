@@ -36,7 +36,7 @@
     <section class="slides">
       <div class="center-slides">
         <ul class="slides-list">
-          <li class="slide-item">
+          <li class="slide-item active">
             <h2>Долго, дорого,<br> скрупулезно</h2>
             <p>Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.</p>
             <a class="slide-button" href="javascript:void(0)">Узнать больше</a>
@@ -158,10 +158,7 @@
     <!--Контакты-->
     <section class="contacts">
       <h2 class="visually-hidden">Контакты</h2>
-      <figure class="contacts-content">
-        <img src="img/map-marker.png" width="1440" height="416" alt="Карта c маркером Нердс">
-        <figcaption class="visually-hidden">Карта</figcaption>
-      </figure>
+      <img src="img/map-marker.png" width="1440" height="416" alt="Карта c маркером Нердс">
       <div class="address">
         <p>Nerds design studio</p>
         <p>наб. Реки Карповки,<br> 5 лит П, Санкт-Петербург</p>
@@ -229,18 +226,31 @@
       <p>Скидка 10% для друзей из социальных сетей.</p>
     </div>
   </footer>
-  <form action="https://echo.htmlacademy.ru/courses" method="get">
-    <p>Напишите нам</p>
-    <label>Ваше имя:
-      <input type="text" name="username" placeholder="Имя Фамилия">
-    </label>
-    <label>Ваш email:
-      <input type="email" placeholder="email@example.com">
-    </label>
-    <p>Текс письма:</p>
-    <textarea name="comment" id="comment-field" rows="4" cols="45" placeholder="В свободной форме"></textarea>
-    <input type="submit" value="Отправить">
-
+  <form class="modal-window" action="https://echo.htmlacademy.ru/courses" method="get">
+    <div class="modal-main-container">
+      <div class="modal-window-title">
+        <p>Напишите нам</p>
+      </div>
+      <div class="modal-container">
+        <div class="username-container">
+          <p>
+            <label for="username">Ваше имя:</label><br>
+            <input type="text" name="username" placeholder="Имя Фамилия" id="username">
+          </p>
+          <p>
+            <label for="email">Ваш email:</label><br>
+            <input type="email" placeholder="email@example.com" id="email">
+          </p>
+        </div>
+        <div class="text-letter">
+          <p>
+            <label for="comment-field">Текс письма:</label><br>
+            <textarea name="comment" id="comment-field" rows="4" cols="87" placeholder="В свободной форме"></textarea>
+          </p>
+        </div>
+        <input type="submit" value="Отправить">
+      </div>
+    </div>
   </form>
 </body>
 

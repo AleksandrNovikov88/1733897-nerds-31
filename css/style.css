@@ -4,6 +4,7 @@
   --white: #FFFFFF;
   --main-gray: #888888;
   --gray: #EEEEEE;
+  --gray-modal-border: #D7DCDE;
   --black: #000000;
   --for-paragraph: #283136;
   --for-footer: #444444;
@@ -66,18 +67,13 @@
 .main-navigation {
   display: grid;
   grid-template-columns: min-content 1fr min-content;
-  padding: 0 10px;
-  min-height: 65px;
+
+
   font-size: 16px;
   line-height: 30px;
   font-weight: 500;
   text-transform: uppercase;
  }
-.main-navigation a {
-  text-decoration: none;
-  margin: 0;
-  padding: 0;
-}
 .main-header-logo-catalog:hover,
 .main-header-logo-catalog:focus {
   opacity: 0.7;
@@ -100,11 +96,38 @@
 .basket-link a:hover,
 .basket-link a:focus {
   color: var(--red);
+  
 }
 .site-navigation a:active,
 .basket-link a:active {
   color: var(--black);
   opacity: 0.3;
+}
+.basket-link a {
+  color: var(--black);
+  text-decoration: none;
+  display: block;
+  padding: 10px 15px;
+  position: relative;
+}
+.site-navigation a {
+  color: var(--black);
+  text-decoration: none;
+  display: block;
+  position: relative;
+}
+.site-navigation li {
+  padding: 10px 15px; 
+}
+.site-navigation a::before {
+  content: "";
+  position: absolute;
+  top: 40px;
+  width: 100%;
+  height: 2px;
+  background-color: var(--red);
+  left: 50%;
+  transform: translateX(-50%);
 }
 .basket-link {
   display: flex;
@@ -112,7 +135,16 @@
   flex-wrap: wrap;
   width: 115px;
 }
-
+.basket-link a::after {
+  content: "";
+  position: absolute;
+  top: 50px;
+  width: 100%;
+  height: 2px;
+  background-color: var(--red);
+  left: 50%;
+  transform: translateX(-50%);
+}
 .basket::before {
   content: "";
   position: absolute;
@@ -127,13 +159,7 @@
 .basket-link .basket {
   position: relative;
 }
-.site-navigation a,
-.basket-link a
-{
-  color: var(--black);
-  display: block;
-  padding: 10px 15px;
-}
+
 .slides {
   background-color: var(--gray);
   margin-bottom: 80px;
@@ -160,12 +186,14 @@
   background-repeat: no-repeat;
   background-position: right;
   background-size: 65%;
+  display: none;
 }
 .slides-list .slide-item:nth-child(3) {
   background-image: url(../img/sliders/nerds-index-slide3.png);
   background-repeat: no-repeat;
   background-position: right;
   background-size: 65%;
+  display: none;
 }
 .slide-button {
   padding: 17px 54px 15px 54px;
@@ -181,8 +209,9 @@
   padding: 0;
   list-style: none;
   position: absolute;
-  top: 390px;
-  left: 915px;
+  bottom: 96px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 .sliders-flex-container button {
   background-color: var(--white);
@@ -610,6 +639,94 @@
   margin: 0;
 }
 
+
+/* Modal window */
+
+
+.modal-window {
+  margin: 0 auto;
+  width: 960px;
+  height: 590px;
+  padding-bottom: 80px;
+}
+.modal-window p {
+  margin: 0;
+  padding: 0;
+}
+.username-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.modal-container {
+  width: 761px;
+  height: 353px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 18px;
+  margin-left: 100px;
+}
+.username-container {
+  margin-bottom: 34px;
+}
+.username-container input {
+  padding: 14px 159px 14px 15px;
+  margin-top: 9px;
+  border: 2px solid var(--gray-modal-border);
+}
+.modal-container > input {
+  padding: 14px 88px;
+  background-color: var(--red);
+  color: var(--white);
+  text-transform: uppercase;
+  border: none;
+  border-radius: 5px;
+}
+.modal-container > input:hover,
+.modal-container > input:focus {
+  background-color: var(--red-button-hover);
+  cursor: pointer;
+}
+.modal-container > input:active {
+  background-color: var(--red-button-active);
+}
+.modal-window-title {
+  font-weight: bold;
+  font-size: 45px;
+  line-height: 53px;
+  margin-bottom: 37px;
+  margin-left: 100px;
+  padding-top: 63px;
+  position: relative;
+}
+.modal-window-title::after {
+  content: "";
+  position: absolute;
+  top: 85px;
+  left: 750px;
+  width: 21px;
+  height: 21px;
+  background-image: url(../img/Vector.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+.text-letter {
+  margin-bottom: 47px;
+}
+.text-letter textarea {
+  padding-top: 15px;
+  padding-left: 15px;
+  padding-right: 22px;
+  padding-bottom: 29px;
+  margin-top: 9px;
+  border: 2px solid #D7DCDE;
+}
+.modal-main-container {
+  width: 960px;
+  padding-bottom: 83px;
+  box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.4);
+}
+
 /* catalog */
 
 
@@ -690,6 +807,8 @@
 .sort-list,
 .sort-arrows {
   list-style: none;
+  display: flex;
+  flex-wrap: wrap;
 }
 .sorting a {
   text-decoration: none;
