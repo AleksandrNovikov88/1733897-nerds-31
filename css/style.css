@@ -70,8 +70,6 @@
 .main-navigation {
   display: grid;
   grid-template-columns: min-content 1fr min-content;
-
-
   font-size: 16px;
   line-height: 30px;
   font-weight: 500;
@@ -92,7 +90,7 @@
   margin: 0;
   padding: 0;
   width: 437px;
-  margin-left: 211px;
+  margin-left: 202px;
 }
 .site-navigation a:hover,
 .site-navigation a:focus,
@@ -106,23 +104,17 @@
   color: var(--black);
   opacity: 0.3;
 }
-.basket-link a {
-  color: var(--black);
-  text-decoration: none;
-  display: block;
-  padding: 10px 15px;
-  position: relative;
-}
 .site-navigation a {
   color: var(--black);
   text-decoration: none;
   display: block;
   position: relative;
+  border: none;
 }
 .site-navigation li {
   padding: 10px 15px; 
 }
-.site-navigation a::before {
+.site-navigation .active::before {
   content: "";
   position: absolute;
   top: 40px;
@@ -132,25 +124,34 @@
   left: 50%;
   transform: translateX(-50%);
 }
-.basket-link {
+.basket-link { 
+ padding-top: 25px;
+ padding-left: 15px;
+ padding-right: 15px;
+}
+.basket-link a {
+  color: var(--black);
+  text-decoration: none;
   display: flex;
-  align-items: center;
   flex-wrap: wrap;
-  width: 115px;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  width: 130px;
 }
 .basket-link a::after {
   content: "";
   position: absolute;
-  top: 50px;
+  top: 40px;
   width: 100%;
   height: 2px;
   background-color: var(--red);
   left: 50%;
   transform: translateX(-50%);
 }
-.basket::before {
+.basket-link a::before {
   content: "";
-  position: absolute;
+  display: block;
   top: 17px;
   left: -15px;
   width: 15px;
@@ -159,10 +160,6 @@
   background-repeat: no-repeat;
   background-position: 0 0;
 }
-.basket-link .basket {
-  position: relative;
-}
-
 .slides {
   background-color: var(--gray);
   margin-bottom: 80px;
@@ -309,7 +306,7 @@
   text-transform: uppercase;
   margin: 0;
   padding: 0;
-  margin-bottom: 16px;
+  margin-bottom: 27px;
 }
 .service-item p {
   font-size: 16px;
@@ -318,7 +315,7 @@
   color: var(--for-paragraph);
   margin: 0;
   padding: 0;
-  margin-bottom: 32px;
+  margin-bottom: 35px;
 }
 .services-list li:nth-child(1) > a {
   background-color: var(--red);
@@ -379,7 +376,7 @@
   font-size: 16px;
   line-height: 24px;
   color: var(--for-paragraph);
-  margin-bottom: 75px;
+  margin-bottom: 121px;
   position: relative;
 }
 .about-company-flex {
@@ -432,7 +429,9 @@
 .about-company li {
   list-style: none;
   position: relative;
-  padding-bottom: 40px;
+}
+.about-company li:not(:nth-child(3)) {
+  padding-bottom: 37px;
 }
 .about-company-list {
   margin-left: 30px;
@@ -495,6 +494,7 @@
   min-height: 184px;
   margin: 0 auto;
   position: relative;
+  margin-bottom: 30px;
 }
 .customers-list {
   list-style: none;
