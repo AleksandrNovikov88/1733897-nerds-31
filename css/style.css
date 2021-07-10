@@ -959,15 +959,17 @@
   font-size: 16px;
   line-height: 20px;
   color: var(--for-paragraph);
-}
-.features {
-  margin-bottom: 50px;
-}
-.filter-option label {
   position: relative;
   display: block;
   cursor: pointer;
   user-select: none;
+}
+input:disabled + label {
+  color: var(--for-paragraph);
+  opacity: 0.3;
+}
+.features {
+  margin-bottom: 50px;
 }
 .filter-input-checkbox + label::before {
   content: "";
