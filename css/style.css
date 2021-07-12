@@ -78,7 +78,7 @@
   padding-top: 48px;
 }
 .navigation-section {
-  width: 1160px;
+  width: 1216px;
   margin: 0 auto;
 }
 .main-navigation {
@@ -88,6 +88,7 @@
   line-height: 30px;
   font-weight: 500;
   text-transform: uppercase;
+  padding-left: 28px;
  }
 .main-header-logo-catalog:hover,
 .main-header-logo-catalog:focus {
@@ -104,7 +105,9 @@
   margin: 0;
   padding: 0;
   width: 437px;
-  margin-left: 202px;
+  margin-left: 188px;
+  padding-top: 5px;
+  justify-content: flex-end;
 }
 .site-navigation a:hover,
 .site-navigation a:focus,
@@ -148,10 +151,11 @@
   text-decoration: none;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   position: relative;
   width: 130px;
+  margin-left: 147px;
 }
 .basket-link .active::after {
   content: "";
@@ -176,7 +180,7 @@
 }
 .slides {
   background-color: var(--gray);
-  margin-bottom: 80px;
+  margin-bottom: 69px;
   padding: 0 10px;
 }
 .center-slides {
@@ -260,8 +264,8 @@
   line-height: 55px;
   margin: 0;
   padding: 0;
-  padding-top: 78px;
-  margin-bottom: 37px;
+  padding-top: 70px;
+  margin-bottom: 26px;
 }
 .slide-item p {
   font-size: 16px;
@@ -270,7 +274,7 @@
   color: var(--for-paragraph);
   margin: 0;
   padding: 0;
-  margin-bottom: 27px;
+  margin-bottom: 49px;
 }
 .slide-button {
   font-size: 16px;
@@ -282,7 +286,7 @@
   border-radius: 3px;
 }
 .services {
-  width: 1100px;
+  width: 1160px;
   padding: 0px 10px;
   min-height: 347px;
   margin: 0 auto;
@@ -323,7 +327,7 @@
   text-transform: uppercase;
   margin: 0;
   padding: 0;
-  margin-bottom: 27px;
+  margin-bottom: 15px;
 }
 .service-item p {
   font-size: 16px;
@@ -332,7 +336,7 @@
   color: var(--for-paragraph);
   margin: 0;
   padding: 0;
-  margin-bottom: 35px;
+  margin-bottom: 45px;
 }
 .service-button {
   border-radius: 3px;
@@ -405,6 +409,9 @@
   margin-bottom: 121px;
   position: relative;
 }
+.about-company-text {
+  padding-top: 34px;
+}
 .about-company-flex {
   display: flex;
   flex-wrap: wrap;
@@ -418,7 +425,7 @@
   margin-left: 149px;
 }
 .about-company-illustration img {
-  margin-bottom: 37px;
+  margin-bottom: 29px;
 }
 .about-company-flex-container {
   display: flex;
@@ -457,7 +464,7 @@
   position: relative;
 }
 .about-company li:not(:nth-child(3)) {
-  padding-bottom: 37px;
+  padding-bottom: 25px;
 }
 .about-company-list {
   margin-left: 30px;
@@ -477,6 +484,7 @@
   line-height: 64px;
   color: var(--black);
   position: relative;
+  padding-bottom: 11px;
 }
 .about-company dd {
   font-weight: 400;
@@ -596,7 +604,7 @@
 .address {
   position: absolute;
   top: 54px;
-  left: 70px;
+  left: 53px;
   margin: 0 auto;
   background-color: var(--white);
   padding: 49px 39px 47px 50px;
@@ -613,7 +621,7 @@
   margin-bottom: 17px;
 }
 .address p:nth-child(3) {
-  margin-bottom: 37px;
+  margin-bottom: 50px;
 }
 .address p {
   font-weight: 400;
@@ -642,6 +650,7 @@
   min-height: 81px;
   margin: 0 auto;
   margin-bottom: 68px;
+  padding-right: 105px;
 }
 .social-list {
   display: flex;
@@ -809,8 +818,8 @@
   color: var(--black);
   width: 727px;
   margin: 0 auto;
-  padding-top: 87px;
-  padding-bottom: 108px;
+  padding-top: 71px;
+  padding-bottom: 107px;
 }
 .title-container {
   background-color: var(--gray);
@@ -818,7 +827,7 @@
 }
 .catalog-main-grid-container {
   display: grid;
-  grid-template-columns: 30% 70%;
+  grid-template-columns: 34% 70%;
   width: 1160px;
   margin: 0 auto;
 }
@@ -909,15 +918,19 @@
   border: none;
 }
 .filter-grid {
-  margin-bottom: 47px;
+  margin-bottom: 8px;
 }
 .filter-grid legend,
 .features legend {
-  margin-bottom: 16px;
+  margin-bottom: 9px;
 }
 .radio-list,
 .features-list {
   list-style: none;
+  margin: 0;
+  padding: 0;
+  padding-left: 20px;
+  margin-bottom: 27px;
 }
 .radio-list li,
 .features-list li {
@@ -938,7 +951,7 @@ input:disabled + label {
   opacity: 0.3;
 }
 .features {
-  margin-bottom: 50px;
+  margin-bottom: 14px;
 }
 .filter-input-checkbox + label::before {
   content: "";
@@ -1205,6 +1218,7 @@ input:disabled + label {
   margin: 0;
   padding: 0;
   list-style: none;
+  margin-bottom: -12px;
 }
 .templates-navigation {
   margin-bottom: 60px;
