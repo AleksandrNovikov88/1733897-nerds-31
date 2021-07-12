@@ -105,8 +105,8 @@
   margin: 0;
   padding: 0;
   width: 437px;
-  margin-left: 188px;
-  padding-top: 5px;
+  margin-left: 203px;
+  padding-top: 7px;
   justify-content: flex-end;
 }
 .site-navigation a:hover,
@@ -114,7 +114,7 @@
 .basket-link a:hover,
 .basket-link a:focus {
   color: var(--red);
-  
+
 }
 .site-navigation a:active,
 .basket-link a:active {
@@ -128,8 +128,17 @@
   position: relative;
   border: none;
 }
-.site-navigation li {
-  padding: 10px 15px; 
+.site-navigation li:nth-child(1) {
+  padding-right: 45px;
+}
+.site-navigation li:nth-child(2) {
+  padding-right: 46px;
+}
+.site-navigation li:nth-child(3) {
+  padding-right: 15px;
+}
+.site-navigation li:nth-child(4) {
+  padding-left: 30px;
 }
 .site-navigation .active::before {
   content: "";
@@ -141,7 +150,7 @@
   left: 50%;
   transform: translateX(-50%);
 }
-.basket-link { 
+.basket-link {
  padding-top: 25px;
  padding-left: 15px;
  padding-right: 15px;
@@ -151,11 +160,12 @@
   text-decoration: none;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
   position: relative;
   width: 130px;
   margin-left: 147px;
+  margin-right: 5px;
 }
 .basket-link .active::after {
   content: "";
@@ -192,7 +202,7 @@
 .slides-list {
   list-style: none;
   margin: 0;
-  padding: 0; 
+  padding: 0;
 }
 .slides-list .slide-item:nth-child(1) {
   background-image: url(../img/sliders/nerds-index-slide1.png);
@@ -295,7 +305,7 @@
 .services-list {
   list-style: none;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 35% 34% 33%;
   margin: 0;
   padding: 0;
 }
@@ -318,7 +328,7 @@
   background-position: top left;
 }
 .service-item {
-  padding-top: 171px; 
+  padding-top: 171px;
 }
 .service-item h3 {
   font-size: 24px;
@@ -411,6 +421,7 @@
 }
 .about-company-text {
   padding-top: 34px;
+  padding-left: 9px;
 }
 .about-company-flex {
   display: flex;
@@ -436,7 +447,7 @@
 .about-company-text h3 {
   width: 651px;
   margin: 0;
-  margin-bottom: 32px;
+  margin-bottom: 33px;
   font-weight: 500;
   font-size: 45px;
   line-height: 45px;
@@ -454,6 +465,16 @@
   margin: 0;
 }
 .about-company-illustration .about-company-subtitle {
+  margin-bottom: 31px;
+}
+.about-company-subtitle-illustration {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: var(--for-paragraph);
+  margin: 0;
+  margin-left: 15px;
   margin-bottom: 31px;
 }
 .about-company-text .about-company-subtitle {
@@ -477,6 +498,9 @@
   left: -35px;
   height: 2px;
   background-color: var(--red);
+}
+.about-company-flex-container div:nth-child(3) {
+  margin-right: 16px;
 }
 .about-company dt {
   font-weight: 700;
@@ -604,7 +628,7 @@
 .address {
   position: absolute;
   top: 54px;
-  left: 53px;
+  left: 266px;
   margin: 0 auto;
   background-color: var(--white);
   padding: 49px 39px 47px 50px;
@@ -923,6 +947,7 @@
 .filter-grid legend,
 .features legend {
   margin-bottom: 9px;
+  margin-left: -15px;
 }
 .radio-list,
 .features-list {
@@ -1062,6 +1087,7 @@ input:disabled + label {
   color: var(--black);
   margin: 0;
   padding: 0;
+  padding-left: 5px;
 }
 .sorting a {
   text-decoration: none;
@@ -1096,6 +1122,21 @@ input:disabled + label {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+}
+.sort-list li:nth-child(1) {
+  padding-left: 14px;
+}
+.sort-list li:nth-child(2) {
+  padding-left: 27px;
+}
+.sort-list li:nth-child(3) {
+  padding-left: 27px;
+}
+.sort-list li:nth-child(4) {
+  padding-left: 52px;
+}
+.sort-list li:nth-child(5) {
+  padding-left: 10px;
 }
 .templates a {
   text-decoration: none;
@@ -1181,20 +1222,23 @@ input:disabled + label {
   width: 230px;
   color: var(--popup-window-color);
   text-align: center;
+  line-height: 20px;
 }
 .popup-window .popup-button  {
   color: var(--white);
 }
 .popup-window h3 {
-  margin-bottom: 12px;
+  margin-bottom: 11px;
+  margin-top: 19px;
 }
 .popup-window p:nth-child(2) {
-  margin-bottom: 32px;
+  margin-bottom: 33px;
 }
 .popup-button {
   background-color: var(--red);
-  padding: 17px 72px 15px 72px;
+  padding: 11px 70px 11px 75px;
   border-radius: 5px;
+  margin-bottom: 38px;
 }
 .popup-button:hover,
 .popup-button:focus {
@@ -1219,6 +1263,7 @@ input:disabled + label {
   padding: 0;
   list-style: none;
   margin-bottom: -12px;
+  margin-left: 7px;
 }
 .templates-navigation {
   margin-bottom: 60px;
