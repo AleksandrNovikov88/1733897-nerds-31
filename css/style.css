@@ -178,12 +178,11 @@
 }
 .slides {
   background-color: var(--gray);
-  margin-bottom: 72px;
+  margin-bottom: 80px;
   padding: 0 10px;
 }
 .center-slides {
   width: 1160px;
-  min-height: 431px;
   margin: 0 auto;
   position: relative;
 }
@@ -195,24 +194,21 @@
 .slides-list .slide-item:nth-child(1) {
   background-image: url(../img/sliders/nerds-index-slide1.png);
   background-repeat: no-repeat;
-  background-position: right;
-  background-size: 65%;
+  background-position: 99% 99%;
   background-color: var(--gray);
   border: none;
 }
 .slides-list .slide-item:nth-child(2) {
   background-image: url(../img/sliders/nerds-index-slide2.png);
   background-repeat: no-repeat;
-  background-position: right;
-  background-size: 65%;
+  background-position: 99% 99%;
   background-color: var(--gray);
   display: none;
 }
 .slides-list .slide-item:nth-child(3) {
   background-image: url(../img/sliders/nerds-index-slide3.png);
   background-repeat: no-repeat;
-  background-position: right;
-  background-size: 65%;
+  background-position: 99% 99%;
   background-color: var(--gray);
   display: none;
 }
@@ -225,7 +221,7 @@
   flex-wrap: wrap;
   width: 90px;
   position: absolute;
-  bottom: 107px;
+  bottom: 95px;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -249,7 +245,7 @@
   height: 6px;
 }
 .slide-item {
-  padding-bottom: 92px;
+  padding-bottom: 88px;
 }
 .slide-item a:hover,
 .slide-item a:focus {
@@ -640,7 +636,7 @@
 .contacts {
   min-height: 416px;
   margin: 0 auto;
-  margin-bottom: 63px;
+  margin-bottom: 65px;
   position: relative;
 }
 .contacts img {
@@ -1209,7 +1205,7 @@ input:disabled + label {
 }
 .template-item:nth-last-child(1),
 .template-item:nth-last-child(2) {
-  margin-bottom: 55px;
+  margin-bottom: 45px;
 }
 .templates-list .template-item:hover,
 .templates-list .template-item:focus {
