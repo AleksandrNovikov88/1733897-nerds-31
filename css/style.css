@@ -1,5 +1,3 @@
-/* Variables */
-
 :root {
   --white: #FFFFFF;
   --main-gray: #888888;
@@ -106,9 +104,9 @@
   margin: 0;
   padding: 0;
   width: 481px;
-  margin-left: 181px;
+  margin-left: 202px;
   padding-top: 7px;
-  justify-content: space-around;
+  justify-content: flex-start;
 }
 .site-navigation a:hover,
 .site-navigation a:focus,
@@ -128,9 +126,7 @@
   display: block;
   position: relative;
   border: none;
-}
-.site-navigation li {
-  padding-left: 0px;
+  margin-right: 45px;
 }
 .site-navigation .active::before {
   content: "";
@@ -308,23 +304,44 @@
 .services-list .service-item:nth-child(3) {
   margin-left: 12px;
 }
-.services-list .service-item:nth-child(1) {
-  background-image: url(../img/section1/illustration-1.jpg);
-  background-size: 300px 146px;
-  background-repeat: no-repeat;
-  background-position: top left;
+.services-list li:nth-child(1) {
+  position: relative;
 }
-.services-list .service-item:nth-child(2) {
-  background-image: url(../img/section1/illustration-2.jpg);
-  background-size: 300px 146px;
-  background-repeat: no-repeat;
-  background-position: top left;
+.service-item:nth-child(1)::before {
+  content: "";
+  position: absolute;
+  width: 300px;
+  height: 146px;
+  top: 0px;
+  left: 0px;
+  background-color: var(--red);
+  background-image: url("../img/section1/illustration-1.jpg");
 }
-.services-list .service-item:nth-child(3) {
-  background-image: url(../img/section1/illustration-3.jpg);
-  background-size: 300px 146px;
-  background-repeat: no-repeat;
-  background-position: top left;
+.services-list li:nth-child(2) {
+  position: relative;
+}
+.service-item:nth-child(2)::before {
+  content: "";
+  position: absolute;
+  width: 300px;
+  height: 146px;
+  top: 0px;
+  left: 0px;
+  background-color: var(--green);
+  background-image: url("../img/section1/illustration-2.jpg");
+}
+.services-list li:nth-child(3) {
+  position: relative;
+}
+.service-item:nth-child(3)::before {
+  content: "";
+  position: absolute;
+  width: 300px;
+  height: 146px;
+  top: 0px;
+  left: 0px;
+  background-color: var(--yellow);
+  background-image: url("../img/section1/illustration-3.jpg");
 }
 .service-item {
   padding-top: 171px;
@@ -1185,9 +1202,8 @@ input:disabled + label {
 }
 .template-item {
   width: 359px;
-  height: 578px;
   background-color: var(--gray);
-  margin-bottom: 72px;
+  margin-bottom: 62px;
   margin-right: 40px;
   position: relative;
 }
@@ -1257,7 +1273,7 @@ input:disabled + label {
 }
 .popup-window h3 {
   margin-bottom: 11px;
-  margin-top: 19px;
+  margin-top: 24px;
 }
 .popup-window p:nth-child(2) {
   margin-bottom: 30px;
@@ -1265,8 +1281,8 @@ input:disabled + label {
 .popup-button {
   background-color: var(--red);
   padding: 11px 70px 11px 75px;
-  border-radius: 5px;
-  margin-bottom: 38px;
+  border-radius: 3px;
+  margin-bottom: 53px;
 }
 .popup-button:hover,
 .popup-button:focus {
