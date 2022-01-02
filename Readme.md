@@ -1,6 +1,6 @@
 # Личный проект «Нёрдс»
 
-* Студент: [Александр Новиков](https://up.htmlacademy.ru/htmlcss/31/user/1733897).
+* Студент: [Александр Игоревич Новиков](https://up.htmlacademy.ru/htmlcss/31/user/1733897).
 * Наставник: [Елизавета Цыгвинцева](https://htmlacademy.ru/profile/id572195).
 
 ---
